@@ -1,0 +1,101 @@
+Technical Choices and Justifications
+
+This document explains the main decisions we took throughout the
+brainstorming and development of the Ad-Blocking using Pi-Hole project.
+For each choice made, we describe the alternatives (if present) considered
+and the reasoning behind our final decision.
+
+
+1. Hardware Choices
+Choice: Raspberry Pi 3B+
+
+Alternatives Considered:
+	-Raspberry Pi Zero W
+	-Raspberry Pi 4
+	-Old laptop / desktop
+	
+Reason of Choice:
+We chose the Raspberry Pi 3B+ because it's the best option
+price, performance, and accessibility wise.
+	-Contains enough processing power to run Pi-Hole
+	-Contains the perfect amount of storage for the project
+		(Raspberry Pi 4 has too much, Raspberry Pi Zero W not enough)
+	-Affordable cost and highly accessible to obtain
+		compared to the Raspberry Pi 4
+
+
+2. Operating System Choices
+Choice: Debian based Raspberry Pi OS
+
+Alternative Considered:
+	-Ubuntu Server for Raspberry Pi
+	
+Reason of Choice:
+We chose the Debian based Raspberry Pi OS because it's:
+	-Officially supported by both the Raspberry Pi
+		Foundation and Pi-Hole
+	-Stable and Reliable for network-level tasks
+
+
+3. Ad-Blocking Software Choices
+Choice: Pi-Hole
+
+Alternative Considered:
+	-AdGuard Home
+
+Reason of Choice:
+We chose Pi-Hole because it's:
+	-Very easy to install
+	-Reliable and well-known within the networking community
+	-Designed specifically for network-wide ad-blocking
+	-Free and Open-Source
+	-Accessible and contains tons of tutorials
+	
+	
+4. Installation Method Choices
+Choice: curl -sSl https://install.pi-hole.net | bash
+
+Alternative Considered:
+	-Manual installation from GitHub sources
+	-Docker installation
+
+Reason of Choice:
+We chose the curl installer because it's the recommended, quickest,
+and most reliable method.
+	-Automatically installs all dependencies
+	-Ensures compatibility with Raspberry Pi OS
+	-Saves time and reduces mistakes
+	-Convenient
+
+
+5. Demonstration Choice
+Choice: Video Demonstration
+
+Showcasing:
+	-Browsing with ads
+	-Browsing after Pi-Hole is enabled
+	-Improvements in privacy, loading speed, and user experience
+	-Comparison between with and without Pi-hole
+	
+Reason of Choice:
+It's safer to film a video showcasing how it works when connected
+to the modem back home. Live demos might fail due to network conditons.
+
+6. License Choices
+Choice: MIT License
+
+Alternatives Considered:
+	-GPL v3
+	-Proprietary license
+	
+Reason of Choice:
+We chose the MIT License because it's:
+	-Simple and easy to understand
+	-Highly permissive
+	-Good for educational projects
+	-Requires no copyleft obligations
+	-Allows users to use and modify the project freely
+	
+Authors
+	-Farwah Bakhsh
+	-Fadwa Shalaby
