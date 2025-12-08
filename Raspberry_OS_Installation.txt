@@ -1,0 +1,250 @@
+fadwa@fadwa-optiplex7090:~$ cd
+fadwa@fadwa-optiplex7090:~$ cd downloads
+bash: cd: downloads: No such file or directory
+fadwa@fadwa-optiplex7090:~$ cd Downloads
+fadwa@fadwa-optiplex7090:~/Downloads$ sl -l
+bash: sl: command not found
+fadwa@fadwa-optiplex7090:~/Downloads$ sl-l
+bash: sl-l: command not found
+fadwa@fadwa-optiplex7090:~/Downloads$ ls -l
+total 65972
+-rw-rw-r-- 1 fadwa fadwa   746341 Oct 27 19:43 20250930124735_midterm2Finished.zip
+-rw-rw-r-- 1 fadwa fadwa    93587 Oct 17 18:03 420-321-F25_lab06.pdf
+-rw-rw-r-- 1 fadwa fadwa    89441 Oct 27 17:39 420-321-F25_lab07.pdf
+-rw-rw-r-- 1 fadwa fadwa    89130 Oct 30 12:03 420-321-F25_lab08.pdf
+-rw-rw-r-- 1 fadwa fadwa    76129 Nov  6 10:00 420-321-F25_lab09.pdf
+-rw-rw-r-- 1 fadwa fadwa    41260 Nov 20 11:12 Diagram.png
+-rw-rw-r-- 1 fadwa fadwa 37722616 Dec  4 10:42 imager_2.0.0_amd64.AppImage
+-rw-rw-r-- 1 fadwa fadwa       61 Nov  6 10:44 Lab9.bashrc
+-rw-rw-r-- 1 fadwa fadwa    27676 Nov 20 11:50 Pi-hole_Logo.png
+-rw-rw-r-- 1 fadwa fadwa    18834 Nov 20 10:44 RPlogo.webp
+-rw-rw-r-- 1 fadwa fadwa  2944196 Oct 17 23:58 UnixLab06-1.pdf
+-rw-rw-r-- 1 fadwa fadwa  1882307 Oct 17 18:02 UnixLab06.docx
+-rw-rw-r-- 1 fadwa fadwa  4189848 Oct 17 23:57 UnixLab06.odt
+-rw-rw-r-- 1 fadwa fadwa  1600052 Oct 17 17:03 UnixLab06.pdf
+-rw-rw-r-- 1 fadwa fadwa  3107542 Oct 30 13:56 UnixLab08.odt
+-rw-rw-r-- 1 fadwa fadwa  1551443 Oct 30 13:57 UnixLab08.pdf
+-rw-rw-r-- 1 fadwa fadwa   925521 Nov  6 11:53 UnixLab09.odt
+-rw-rw-r-- 1 fadwa fadwa   475265 Nov  6 11:54 UnixLab09.pdf
+-rw-rw-r-- 1 fadwa fadwa  7387186 Oct 27 20:00 UnixLab7.odt
+-rw-rw-r-- 1 fadwa fadwa  3935992 Oct 27 20:01 UnixLab7.pdf
+-rw-rw-r-- 1 fadwa fadwa   614969 Oct 17 16:41 wallpaper.jpg
+fadwa@fadwa-optiplex7090:~/Downloads$ chmod +x imager_2.0.0_amd64.AppImage
+fadwa@fadwa-optiplex7090:~/Downloads$ $PATH
+bash: /home/fadwa/bin:/home/fadwa/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or directory
+fadwa@fadwa-optiplex7090:~/Downloads$ /home/fadwa/Downloads/^C
+fadwa@fadwa-optiplex7090:~/Downloads$ /home/fadwa/Downloads/imager_2.0.0_amd64.AppImage
+qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in "/tmp/.mount_imagerGCaAIg/usr/plugins/platforms"
+Not running with elevated privileges - device access may fail
+Loading cache settings:
+  Caching enabled: true
+  Last file name: ""
+  Uncompressed hash (extract_sha256): "(empty)"
+  Compressed hash (image_download_sha256): "(empty)"
+CacheManager initialized with background thread
+Starting background cache operations
+Starting background drive list polling
+Background: Checking disk space for cache operations
+Background: Created cache directory: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager"
+Background: Cache directory: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager"
+Background: Available space: 78 GiB
+Failed to register D-Bus object: ""
+qrc:/qt/qml/RpiImager/main.qml:16:1: QML ApplicationWindow: Accessible attached property must be attached to an object deriving from Item or Action
+IP DETECTED:  "10.16.149.118"
+Disk space check complete: 78 GiB available in "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager"
+OS list refresh disabled (no interval provided)
+Stopping background drive list polling
+Cleaning up CacheManager
+CacheManager destructor: cleaning up background thread
+CacheManager destructor: cleanup complete
+fadwa@fadwa-optiplex7090:~/Downloads$ sudo  /home/fadwa/Downloads/imager_2.0.0_amd64.AppImage
+[sudo] password for fadwa:
+Running as root via sudo
+Original user: fadwa
+Original UID: 1000
+Original home directory: /home/fadwa
+DISPLAY already set to: :0
+XAUTHORITY already set to: /run/user/1000/.mutter-Xwaylandauth.6446G3
+Set HOME to: /home/fadwa
+Set XDG_CACHE_HOME to: /home/fadwa/.cache
+Set XDG_CONFIG_HOME to: /home/fadwa/.config
+Set XDG_DATA_HOME to: /home/fadwa/.local/share
+Set XDG_RUNTIME_DIR to: /run/user/1000
+Set DBUS_SESSION_BUS_ADDRESS to: unix:path=/run/user/1000/bus
+qt.qpa.theme.dbus: Session DBus not running.
+qt.qpa.theme.dbus: Application will not react to setting changes.
+ Check your DBus installation.
+Loading cache settings:
+  Caching enabled: true
+  Last file name: ""
+  Uncompressed hash (extract_sha256): "(empty)"
+  Compressed hash (image_download_sha256): "(empty)"
+CacheManager initialized with background thread
+Starting background cache operations
+Starting background drive list polling
+Background: Checking disk space for cache operations
+Background: Cache directory: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager"
+Background: Available space: 78 GiB
+No D-Bus session bus available
+qrc:/qt/qml/RpiImager/main.qml:16:1: QML ApplicationWindow: Accessible attached property must be attached to an object deriving from Item or Action
+IP DETECTED:  "10.16.149.118"
+Disk space check complete: 78 GiB available in "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager"
+OS list refresh disabled (no interval provided)
+Hardware device changed from "" to "Raspberry Pi 3" - clearing image selection
+qml: OSSelectionListView: index: 0 currentIndex: -1 isReselection: false shouldPreserveScroll: true fromMouse: true fromDoubleClick: false
+qml: OSSelectionListView: Restoring scroll - contentY: 0 savedContentY: 0 contentHeight: 1079
+qml: OSSelectionListView: Restored to 0
+Device selection changed to: "/dev/sdb"
+qml: LocaleCustomizationStep: Saved recommendedWifiCountry: CA
+qml: WifiCustomizationStep: detected SSID: VC-Secure
+Custom config.txt entries: ""
+Custom cmdline.txt entries: " cfg80211.ieee80211_regdom=CA"
+Custom firstrun.sh: ""
+Cloudinit: "hostname: FadwaPi\nmanage_etc_hosts: true\npackages:\n- avahi-daemon\napt:\n  conf: |\n    Acquire {\n      Check-Date \"false\";\n    };\ntimezone: America/Toronto\nkeyboard:\n  model: pc105\n  layout: \"ca\"\nenable_ssh: true\nusers:\n- name: fadwa\n  groups: users,adm,dialout,audio,netdev,video,plugdev,cdrom,games,input,gpio,spi,i2c,render,sudo\n  shell: /bin/bash\n  lock_passwd: false\n  passwd: $y$jB5$nx4StwYIiYXBN7IQkJpOC/$uDllAPaJTZehBpH8djYJRexbxSbBEDBdncePyIApci/\nssh_pwauth: true\nrpi:\n  interfaces:\n    serial: true\n"
+Advanced options: QFlags<ImageOptions::AdvancedOption>(NoAdvancedOptions)
+Detected total system memory: 15685 MB on "Linux"
+Adaptive sync configuration: "High memory (15685MB)" - Sync interval: 245 MB - Time interval: 7000 ms - Platform: "Linux"
+Optimal write buffer size: 8192 KB for 15685 MB system
+Using buffer size: 8388608 bytes with page size: 4096 bytes
+Cache setup - file path: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager/lastdownload.cache" custom: false
+Cache setup complete for download: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager/lastdownload.cache"
+Setting up cache file for download: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager/lastdownload.cache"
+Download thread starting. isImage? true filename: "/dev/sdb"
+Unmounting: "/dev/sdb"
+BLKDISCARD not supported
+Zeroing out first and last MB of drive
+Done zero'ing out start and end of drive. Took 0 seconds
+Telemetry done. cURL status code = 0 info sent = "url=https%3A%2F%2Fdownloads.raspberrypi.com%2Fraspios_arm64%2Fimages%2Fraspios_arm64-2025-12-04%2F2025-12-04-raspios-trixie-arm64.img.xz&os=&image=Raspberry%20Pi%20OS%20%2864-bit%29&imagerVersion=v2.0.0&imagerOsType=debian&imagerOsVersion=13&imagerOsArch=x86_64&imagerLocale=en_US"
+Received header: "HTTP/2 200"
+Received header: "date: Thu, 04 Dec 2025 20:58:46 GMT"
+Received header: "server: Apache"
+Received header: "vary: User-Agent"
+Received header: "last-modified: Thu, 04 Dec 2025 15:03:40 GMT"
+Received header: "etag: \"4f23234c-64521a2582255\""
+Received header: "accept-ranges: bytes"
+Received header: "content-length: 1327702860"
+Received header: "content-type: application/x-xz"
+Received header: ""
+Started progress updates after successful drive opening
+_writeFile: captured first block ( 8388608 ) and advanced file offset via seek
+Performing periodic sync at 134217728 bytes written ( 134217728 bytes since last sync, 7255 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 318767104 bytes written ( 184549376 bytes since last sync, 7166 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 503316480 bytes written ( 184549376 bytes since last sync, 7144 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 687865856 bytes written ( 184549376 bytes since last sync, 7247 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 864026624 bytes written ( 176160768 bytes since last sync, 7009 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 989855744 bytes written ( 125829120 bytes since last sync, 7153 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 1174405120 bytes written ( 184549376 bytes since last sync, 7266 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 1358954496 bytes written ( 184549376 bytes since last sync, 7314 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 1484783616 bytes written ( 125829120 bytes since last sync, 7264 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 1669332992 bytes written ( 184549376 bytes since last sync, 7255 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 1853882368 bytes written ( 184549376 bytes since last sync, 7219 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 2013265920 bytes written ( 159383552 bytes since last sync, 7247 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 2197815296 bytes written ( 184549376 bytes since last sync, 7317 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 2365587456 bytes written ( 167772160 bytes since last sync, 7210 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 2508193792 bytes written ( 142606336 bytes since last sync, 7206 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 2659188736 bytes written ( 150994944 bytes since last sync, 7171 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 2843738112 bytes written ( 184549376 bytes since last sync, 7044 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 3028287488 bytes written ( 184549376 bytes since last sync, 7219 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 3212836864 bytes written ( 184549376 bytes since last sync, 7247 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 3397386240 bytes written ( 184549376 bytes since last sync, 7102 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 3581935616 bytes written ( 184549376 bytes since last sync, 7172 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 3758096384 bytes written ( 176160768 bytes since last sync, 7049 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 3942645760 bytes written ( 184549376 bytes since last sync, 7243 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 4118806528 bytes written ( 176160768 bytes since last sync, 7110 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 4303355904 bytes written ( 184549376 bytes since last sync, 7252 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 4487905280 bytes written ( 184549376 bytes since last sync, 7167 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 4672454656 bytes written ( 184549376 bytes since last sync, 7328 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 4848615424 bytes written ( 176160768 bytes since last sync, 7100 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 5033164800 bytes written ( 184549376 bytes since last sync, 7286 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 5217714176 bytes written ( 184549376 bytes since last sync, 7263 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 5402263552 bytes written ( 184549376 bytes since last sync, 7279 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 5578424320 bytes written ( 176160768 bytes since last sync, 7104 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 5762973696 bytes written ( 184549376 bytes since last sync, 7214 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 5947523072 bytes written ( 184549376 bytes since last sync, 7240 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 6106906624 bytes written ( 159383552 bytes since last sync, 7472 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 6249512960 bytes written ( 142606336 bytes since last sync, 7321 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Performing periodic sync at 6358564864 bytes written ( 109051904 bytes since last sync, 11174 ms elapsed) on "Linux"
+Periodic sync completed successfully
+Download done in 273 seconds
+Hash of uncompressed image: "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+Cache file created:
+  Image hash (uncompressed): "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+  Cache file hash (compressed): "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e"
+Write done in 274 seconds
+DownloadExtractThread::_verify() called (child class implementation with progress updates)
+Post-write verification using 12288 KB buffer for 6152 MB image
+DownloadThread cache update - cacheFileHash: "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e" imageHash: "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+Updating cache file:
+  Uncompressed hash (extract_sha256): "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+  Compressed hash (image_download_sha256): "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e"
+Saving cache settings:
+  File name: "/home/fadwa/.cache/Raspberry Pi/Raspberry Pi Imager/lastdownload.cache"
+  Uncompressed hash (extract_sha256): "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+  Compressed hash (image_download_sha256): "f7afb40e587746128538d84f217bf478a23af59484d4db77f2d06bf647f7c82e"
+Cache settings saved successfully
+Emitting cacheFileUpdated signal to refresh UI
+Received cacheFileUpdated signal - refreshing UI for hash: "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+Verify hash: "19b108fe07cff2b5cd7df0f76b6d7325e43fb2a1d5418d10f6bd56642e0e8579"
+Verify done in 273.671 seconds
+writeFile: writing file "user-data" to root directory
+writeFile: calling getDirEntry with createIfNotExist=true
+writeFile: getDirEntry returned, entry name: "55:53:45:52:2d:44:7e:31:20:20:20"
+writeFile: firstCluster = 35369
+writeFile: updating directory entry, firstCluster = 35369 size = 521
+writeFile: calling updateDirEntry for "user-data"
+writeFile: updateDirEntry succeeded for "user-data"
+writeFile: writing file "network-config" to root directory
+writeFile: calling getDirEntry with createIfNotExist=true
+writeFile: getDirEntry returned, entry name: "4e:45:54:57:4f:52:7e:31:20:20:20"
+writeFile: firstCluster = 24378
+writeFile: updating directory entry, firstCluster = 24378 size = 240
+writeFile: calling updateDirEntry for "network-config"
+writeFile: updateDirEntry succeeded for "network-config"
+writeFile: writing file "cmdline.txt" to root directory
+writeFile: calling getDirEntry with createIfNotExist=true
+writeFile: getDirEntry returned, entry name: "43:4d:44:4c:49:4e:45:20:54:58:54"
+writeFile: firstCluster = 36107
+writeFile: updating directory entry, firstCluster = 36107 size = 183
+writeFile: calling updateDirEntry for "cmdline.txt"
+writeFile: updateDirEntry succeeded for "cmdline.txt"
+Stopping background drive list polling
+Cleaning up CacheManager
+CacheManager destructor: cleaning up background thread
+CacheManager destructor: cleanup complete
+fadwa@fadwa-optiplex7090:~/Downloads$
