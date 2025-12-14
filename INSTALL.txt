@@ -1,0 +1,79 @@
+INSTALL
+
+Project: Ad blocking using Pi-Hole
+Platform: Raspberry Pi OS (Debian-based Linux)
+
+1. System Requirements
+	-Raspberry Pi (64-bit ARM)
+	-Raspberry Pi OS
+	-Internet Connection
+	-User with 'sudo' privileges
+
+2. Install Pi-Hole
+Pi-Hole was installed using the official automated installation script.
+
+From your home directory, open the terminal and run:
+	curl -sSL https://install.pi-hole.net | bash
+
+When prompted, pick these following options that we selected during our installation:
+	-Network interface: eth0 (Ethernet)
+	-IPv4 address (initial): 192.168.0.124
+	-Upstream DNS provider: Google DNS (8.8.8.8)
+	-Web admin interface: Enabled
+	-Query logging: Enabled
+	-Privacy Level: 0 (show all queries)
+	-Default blocklist: Steven Black's Unified Hosts List
+	
+3. Automatic Configuration Performed by Installer
+Pi-Hole automatically :
+	-Installs all required dependencies
+	-Created the pihole system user and group
+	-Installed Pi-Hole Core and Web Interface
+	-Installed and configured the DNS engine
+	
+4. Static IP Address
+During installation, Pi-hole was initially configured with the following IPv4 address:
+	192.168.0.124
+	
+5. Accessing Web Interface
+The Pi-Hole admin dashboard can be accessed at:
+	http://192.168.0.124/admin
+or
+	http://pi.hole:80/admin
+
+6. Admin Password
+During installation, an admin password was generated.
+If you want to change it, run this in the terminal:
+	pihole setpassword
+	
+7. Configure Client Device(s)
+To enable network-wide ad blocking, configure client device(s) / router to use
+the Pi-Hole IP address as the DNS server:
+	Final DNS IP on our network:
+		192.168.1.80
+
+8. Verifying Installation
+To check Pi-Hole service status, run:
+	pihole status
+
+9. Verifying ad blocking
+By viewing the queries in the Query Log via the web interface
+
+10. Installation Log
+Full installation log is stored in:
+	/etc/pihole/install.log
+	
+Notes
+	-Pi-hole operates as a DNS sinkhole, blocking ads and trackers at the network level
+	-No browser extensions are required
+	-All DNS filtering is centrally managed through the web interface
+	
+	-IMPORTANT: IP addresses may vary between systems and network environments.
+	 During setup, the Pi-hole instance was assigned different IP addresses
+	 (e.g. 192.168.0.124) before settling on the final operational DNS IP of
+	 192.168.1.80. Users installing Pi-hole on a different network should use
+	 the IP address assigned to their own device.
+
+Authors
+	Farwah Bakhsh - 2475399
+	Fadwa Shalaby - 6296112
